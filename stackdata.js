@@ -1,16 +1,7 @@
 class Stack {
-    constructor(arr = [], length = 0) {
-        this._arr = arr;
-        this._length = length;
-    }
-    get length() {
-        return this._length;
-    }
-    set length(length) {
-        return this._length = length;
-    }
-    get arr() {
-        return this._arr;
+    constructor() {
+        this.arr = [];
+        this.length = 0;
     }
     push(val) {
         this.length += 1;
