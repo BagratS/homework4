@@ -12,10 +12,10 @@ class Stack {
         return this.arr.pop();
     }
     peek() {
-        return arr[this.length];
+        return this.arr[this.length - 1];
     }
     search(element) {
-        this.arr.find(val => val === element);
+        return this.arr.find(val => val === element);
     }
     isEmpty() {
         return this.length === 0;
@@ -30,3 +30,5 @@ stack.push(1);
 stack.push(2);
 console.log(stack.arr);
 console.log(stack.length);
+console.log(stack.peek());
+console.log(stack.search(2));
