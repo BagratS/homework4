@@ -9,7 +9,7 @@ class Stack {
     }
     pop() {
         if (this.length === 0) {
-            return this.arr.pop();
+            return undefined;
         }
         this.length -= 1;
         return this.arr.pop();
